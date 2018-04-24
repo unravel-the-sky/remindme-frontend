@@ -5,7 +5,7 @@
   "author": "unravel-the-sky <sekdemir@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "npm install --dev webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "npm install --only=dev webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "build": "node build/build.js"
   },
