@@ -7,10 +7,7 @@ import TaskList from './components/TaskList';
 // import LoginWithCredentials from './components/login/LoginPageCredentials'
 
 import LoginMainPage from './components/login/LoginPage';
-import LoginWithAd from './components/login/LoginPageAd';
 import LoginWithCredentials from './components/login/LoginPageCredentials';
-import LoginWithEmail from './components/login/LoginPageEmail';
-import LoginWithSms from './components/login/LoginPageSms';
 import SignUpPage from './components/login/Signup';
 
 import TasksPane from './components/products/TasksPane';
@@ -29,7 +26,6 @@ const routes = [
     path: '/login',
     component: LoginMainPage,
     children: [ { path: 'credentials', component: LoginWithCredentials }, 
-                { path: 'email', component: LoginWithEmail },
                 { path: 'signup', component: SignUpPage }
               ]
   },
